@@ -24,7 +24,7 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 st.title("🕷️ WEB-ENCRYPTED MESSAGING 🕸️")
-st.subheader("For the MAN I adore the most")
+st.subheader("Cyber Love Letter")
 
 # 2. The Secret Key Logic
 # In a real app, you'd hide this, but for your fun project, 
