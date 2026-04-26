@@ -34,7 +34,7 @@ def generate_key(secret_word):
     key = base64.urlsafe_b64encode(secret_word.ljust(32)[:32].encode())
     return key
 
-# Set your "Secret Key" here (Change 'JUSTIEE' to any word you both know)
+# Set your "Secret Key" here 
 user_key = generate_key("J262427")
 cipher = Fernet(user_key)
 
@@ -47,7 +47,7 @@ with tab1:
     if st.button("Generate Secret Web"):
         if secret_text:
             encrypted_text = cipher.encrypt(secret_text.encode()).decode()
-            st.success("Message Locked! Copy this code to send him:")
+            st.success("Message Locked! Copy this code to send them:")
             st.code(encrypted_text)
         else:
             st.warning("With great power comes... the need to actually type a message!")
